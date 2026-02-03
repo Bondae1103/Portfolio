@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anoop Nair | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --accent: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    header span { color: var(--accent); }
+    header p { margin-top: 1rem; color: var(--muted); }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(2,6,23,0.8);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      z-index: 100;
+    }
+    nav a {
+      color: var(--text);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    section { padding: 5rem 8%; }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(56,189,248,0.15);
+    }
+    .card h3 { margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.9rem; }
+    .skills span {
+      display: inline-block;
+      background: rgba(56,189,248,0.15);
+      color: var(--accent);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      margin: 0.3rem;
+      font-size: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>Anoop Nair</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Hi, I'm <span>Anoop</span></h1>
+      <p>Computer Science (Bioinformatics) student | AI • ML • Computational Biology</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science undergraduate specializing in Bioinformatics at VIT Vellore (CGPA 8.87).
+      I enjoy working at the intersection of software engineering, machine learning, and computational biology.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Computational Biology Research Trainee</h3>
+        <p>BRIC RGCB • 2025</p>
+        <p>Protein–ligand simulations using GROMACS & AutoDock; RMSD, RMSF, H-bonds analysis in R.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing Intern</h3>
+        <p>ThoughtLine Digital • 2024</p>
+        <p>Designed data-driven social media campaigns and analyzed engagement metrics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><h3>PhytoScan</h3><p>Plant disease detection using YOLOv8 & ResNet.</p></div>
+      <div class="card"><h3>Protein–Ligand Interaction Study</h3><p>MD simulation analysis of HIV protease–ligand binding.</p></div>
+      <div class="card"><h3>Genomic Variant Resistance Classifier</h3><p>Random Forest model on MTB genomic variants.</p></div>
+      <div class="card"><h3>IoT Water Flow Sensor</h3><p>Arduino-based real-time monitoring system.</p></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span><span>C++</span><span>Java</span><span>Machine Learning</span>
+      <span>Bioinformatics</span><span>GROMACS</span><span>AutoDock</span><span>R</span>
+      <span>Arduino</span><span>SQL</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: anoop.nair.1103@gmail.com</p>
+    <p>Location: Thiruvananthapuram, Kerala</p>
+  </section>
+
+  <footer>
+    © 2026 Anoop Nair
+  </footer>
+</body>
+</html>
